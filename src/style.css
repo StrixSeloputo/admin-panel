@@ -1,6 +1,20 @@
 :root {
     --light-purple-color: #A8A8FF;
     --middle-purple-color: #8055FF;
+
+    --header-font-size: 26px;
+
+    --height-medium: 32px;
+    --height-large: 48px;
+
+    --margin-vertical: 32px;
+    --margin-horizonal: 48px;
+
+    --padding-small: 8px;
+
+    --border-width: 2px;
+
+    --text-input-width: 256px;
 }
 
 .body {
@@ -10,15 +24,14 @@
 
     /* day/white */
     background: white;
-    box-shadow: 0 32px 128px rgba(0, 0, 0, 0.5), 0 16px 32px rgba(0, 0, 0, 0.34), 0 8px 8px rgba(0, 0, 0, 0.25);
+    /*box-shadow: 0 32px 128px rgba(0, 0, 0, 0.5), 0 16px 32px rgba(0, 0, 0, 0.34), 0 8px 8px rgba(0, 0, 0, 0.25);*/
 }
 
 .main__wrapper {
-    /* Auto Layout */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 32px 48px 0;
+    align-items: stretch;
+    padding: var(--margin-vertical) var(--margin-horizonal) 0;
 
     position: absolute;
     left: 0;
@@ -28,162 +41,93 @@
 }
 
 .header {
-    /* Auto Layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    height: 32px;
+    height: var(--height-medium);
 
     background: var(--light-purple-color);
 
-    /* Inside Auto Layout */
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    margin-bottom: 32px;
+    margin-bottom: var(--margin-vertical);
 }
 
 .header__text {
-    height: 32px;
+    height: var(--height-medium);
 
     /* headline */
     font-family: Ubuntu, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
-    line-height: 32px;
+    font-size: var(--header-font-size);
+    line-height: var(--height-medium);
     /* identical to box height, or 123% */
-    letter-spacing: -0.2px;
+    /*letter-spacing: -0.2px;*/
 
     color: var(--middle-purple-color);
-
-    /* Inside Auto Layout */
-    flex: none;
-    order: 0;
-    flex-grow: 1;
 }
 
 .control-panel {
-    /* Auto Layout */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 8px;
+    padding: var(--padding-small);
 
-    border: 2px solid var(--light-purple-color);
+    border: var(--border-width) solid var(--light-purple-color);
     box-sizing: border-box;
 
-    /* Inside Auto Layout */
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    margin-bottom: 32px;
+    margin-bottom: var(--margin-vertical);
 }
 
 .control-panel__item-group {
-    /* Auto Layout */
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-
-    /* Inside Auto Layout */
-    flex: none;
-    order: 0;
 }
 
 .control-panel__extra-items {
 
 }
 
-.control-panel__input {
-    /* Auto Layout */
-    padding: 8px;
-
-    width: 256px;
-    height: 32px;
+.control-panel__text-input {
+    width: var(--text-input-width);
+    height: var(--height-medium);
 
     background: var(--middle-purple-color);
 
-    /* Inside Auto Layout */
-    flex: none;
-    order: 0;
-    margin-right: 8px;
+    margin-right: var(--padding-small);
 }
 
 .control-panel__item {
-    /* Auto Layout */
-    padding: 8px;
-    width: 32px;
-    height: 32px;
+    width: var(--height-medium);
+    height: var(--height-medium);
 
     background: var(--middle-purple-color);
-
-    /* Inside Auto Layout */
-    flex: none;
-    order: 1;
 }
 
 .table__wrapper {
-    /* Auto Layout */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 
-    border: 2px solid var(--middle-purple-color);
+    border: var(--border-width) solid var(--middle-purple-color);
     box-sizing: border-box;
 
-    /* Inside Auto Layout */
-    flex: none;
-    order: 2;
-    align-self: stretch;
     flex-grow: 1;
 }
 
 .table__header {
-    /* Auto Layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 8px;
-    height: 48px;
+    height: var(--height-large);
 
     background: var(--middle-purple-color);
-
-    /* Inside Auto Layout */
-    flex: none;
-    order: 0;
-    align-self: stretch;
 }
 
 .table__body {
-    /* Auto Layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 32px;
-
     background: var(--light-purple-color);
 
-    /* Inside Auto Layout */
-    flex: none;
-    order: 1;
-    align-self: stretch;
     flex-grow: 1;
 }
 
 .table__footer {
-    /* Auto Layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 8px;
-    height: 48px;
+    height: var(--height-large);
 
     background: var(--middle-purple-color);
 
-    /* Inside Auto Layout */
-    flex: none;
-    order: 2;
     align-self: stretch;
 }
