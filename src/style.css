@@ -42,15 +42,12 @@
 
 .header {
     height: var(--height-medium);
-
     background: var(--light-purple-color);
-
     margin-bottom: var(--margin-vertical);
 }
 
 .header__text {
     height: var(--height-medium);
-
     /* headline */
     font-family: Ubuntu, sans-serif;
     font-style: normal;
@@ -113,15 +110,127 @@
 }
 
 .table__header {
-    height: var(--height-large);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 8px;
+    /*height: 40px;*/
 
-    background: var(--middle-purple-color);
+    /* blue */
+    background: #459DF5;
+    border-bottom: 1px solid #EBF0F5;
 }
 
 .table__body {
-    background: var(--light-purple-color);
-
+    /*background: var(--light-purple-color);*/
+    background: #FFFFFF;
     flex-grow: 1;
+}
+
+.table__row {
+    display: flex;
+    flex-direction: row;
+    /*align-items: center;*/
+    padding: 0 8px;
+    align-content:center;
+
+    /* day/white blue */
+    border-bottom: 1px solid #EBF0F5;
+}
+
+.table__cell {
+    display: flex;
+    align-items: center;
+    align-content:center;
+    margin: 12px 8px;
+}
+
+.table__header-text {
+    align-items: flex-start;
+
+    /* bodytext */
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height, or 123% */
+
+    /* day/white */
+    color: #EBF0F5;
+    /* when selected */
+    /* color: #FFFFFF; */
+}
+
+.table__cell-text {
+    /* bodytext */
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height, or 123% */
+
+    /* day/black */
+    color: #000000;
+
+}
+
+.table__arrow {
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-left: 9px;
+
+    /* to_bot */
+    width: 6px;
+    height: 5px;
+
+    /* day/white blue */
+    background: #EBF0F5;
+    /*transform: rotate(-180deg);*/
+}
+
+.table__checkbox {
+    width: 16px;
+    height: 16px;
+
+    /* day/white */
+    background: #FFFFFF;
+    /* day/light blue */
+
+    border: 1px solid #BAD8F5;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.table__id {
+    /* day/white blue */
+    /*color: #EBF0F5;*/
+    flex-grow: 27;
+}
+
+.table__date {
+    /*width: 176px;*/
+    flex-grow: 44;
+}
+
+.table__status {
+    flex-grow: 44;
+}
+
+.table__items-number {
+    flex-grow: 24;
+
+}
+
+.table__sum {
+    flex-grow: 32;
+}
+
+.table__full-name {
+    flex-grow: 193;
 }
 
 .table__footer {
