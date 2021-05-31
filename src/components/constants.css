@@ -1,0 +1,18 @@
+:root {
+    --light-purple-color: #A8A8FF;
+    --middle-purple-color: #8055FF;
+
+    --header-font-size: 26px;
+
+    --height-medium: 32px;
+    --height-large: 48px;
+
+    --margin-vertical: 32px;
+    --margin-horizonal: 48px;
+
+    --padding-small: 8px;
+
+    --border-width: 2px;
+
+    --text-input-width: 256px;
+}

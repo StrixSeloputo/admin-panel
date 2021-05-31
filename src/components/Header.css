@@ -1,0 +1,21 @@
+@import url('/constants.css');
+
+.header {
+    height: var(--height-medium);
+    background: var(--light-purple-color);
+    margin-bottom: var(--margin-vertical);
+}
+
+.header__text {
+    height: var(--height-medium);
+    /* headline */
+    font-family: Ubuntu, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: var(--header-font-size);
+    line-height: var(--height-medium);
+    /* identical to box height, or 123% */
+    /*letter-spacing: -0.2px;*/
+
+    color: var(--middle-purple-color);
+}
