@@ -1,0 +1,10 @@
+@import "./constants.css";
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    background: var(--day-white);
+    border: 1px solid var(--day-light-blue);
+    box-sizing: border-box;
+    border-radius: 2px;
+}

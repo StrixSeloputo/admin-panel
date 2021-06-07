@@ -1,0 +1,7 @@
+@import "constants.css";
+
+.status__icon {
+    width: 8px;
+    height: 8px;
+    margin: 4px;
+}

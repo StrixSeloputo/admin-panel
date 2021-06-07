@@ -15,4 +15,36 @@
     --border-width: 2px;
 
     --text-input-width: 256px;
+
+    --status-red: #F53152;
+    --status-orange: #FF8C56;
+    --status-green: #0FB864;
+    --status-blue: #459DF5;
+
+    --day-black: #000000;
+    --day-white: #FFFFFF;
+    --day-light-blue: #BAD8F5;
+    --day-white-blue: #EBF0F5;
+    --day-shade: rgba(0, 0, 0, 0.15);
+
+    --night-black: #BCC4CC;
+    --night-white: #2B2D33;
+    --night-light-blue: #454E52;
+    --night-white-blue: #1F2629;
+    --night-shade: rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-shade--day {
+    background: #C4C4C4;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-shade--night {
+    background: #C4C4C4;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2), 0px 6px 12px rgba(0, 0, 0, 0.3), 0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.form-shade {
+    background: #C4C4C4;
+    box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.2), 0px 0px 16px rgba(0, 0, 0, 0.15), 0px 0px 4px rgba(0, 0, 0, 0.1);
 }
