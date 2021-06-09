@@ -1,0 +1,23 @@
+import React, {Component} from "react";
+import Button from "./Button";
+
+class ThemeSwitcher extends Component {
+    state = {
+        isDay: true
+    }
+
+    render() {
+        return (
+            <Button onClick={this.switchTheme}
+                    text={this.state.isDay ? "Светлая тема" : "Темная тема"} />
+        )
+    }
+
+    switchTheme = () => {
+        this.setState({
+            isDay: !this.state.isDay
+        })
+    }
+}
+
+export default ThemeSwitcher;

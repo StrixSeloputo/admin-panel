@@ -2,8 +2,11 @@
 
 .header {
     height: var(--height-medium);
-    background: var(--light-purple-color);
     margin-bottom: var(--margin-vertical);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .header__text {
@@ -14,8 +17,5 @@
     font-weight: bold;
     font-size: var(--header-font-size);
     line-height: var(--height-medium);
-    /* identical to box height, or 123% */
-    /*letter-spacing: -0.2px;*/
-
-    color: var(--middle-purple-color);
+    color: var(--day-black);
 }

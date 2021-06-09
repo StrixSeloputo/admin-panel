@@ -7,7 +7,7 @@ import Table from "./components/Table";
 function App() {
   return (
       <div className="main__wrapper">
-        <Header/>
+        <Header text="Список заказов"/>
         <ControlPanel/>
         <Table/>
       </div>

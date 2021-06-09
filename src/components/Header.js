@@ -1,11 +1,14 @@
 import React from "react";
 import './Header.css';
 import HeaderText from './HeaderText';
+import ThemeSwitcher from "./ThemeSwitcher";
 
-function Header() {
+function Header(props) {
+    const {text} = props;
     return (
         <div className="header">
-            <HeaderText/>
+            <HeaderText text={text}/>
+            <ThemeSwitcher theme="light"/>
         </div>
     )
 }
