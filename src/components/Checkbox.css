@@ -1,10 +1,12 @@
 @import "./constants.css";
 
-.checkbox {
+input[type=checkbox] {
     width: 16px;
     height: 16px;
-    background: var(--day-white);
-    border: 1px solid var(--day-light-blue);
-    box-sizing: border-box;
-    border-radius: 2px;
+    /*background: var(--day-white);*/
+    /*border: 1px solid var(--day-light-blue);*/
+    /*box-sizing: border-box;*/
+    /*border-radius: 2px;*/
+    margin: 0;
+    /*color:  -internal-light-dark(var(--day-light-blue), var(--day-white));*/
 }
