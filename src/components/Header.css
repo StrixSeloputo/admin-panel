@@ -1,4 +1,4 @@
-@import "constants.css";
+@import "common/constants.css";
 
 .header {
     height: var(--height-medium);

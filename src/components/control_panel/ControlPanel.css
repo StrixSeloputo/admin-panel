@@ -1,4 +1,4 @@
-@import "constants.css";
+@import "../common/constants.css";
 
 .control-panel {
     display: flex;

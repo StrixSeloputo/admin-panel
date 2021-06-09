@@ -1,4 +1,4 @@
-@import "components/constants.css";
+@import "components/common/constants.css";
 
 .main__wrapper {
   display: flex;

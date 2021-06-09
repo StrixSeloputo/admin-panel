@@ -1,7 +1,7 @@
 import React from "react";
 import './Status.css';
 import StatusIcon from './StatusIcon';
-import Text from "./Text";
+import Text from "./common/Text";
 
 function Status(props) {
     const {statusId} = props;

@@ -1,8 +1,8 @@
 import React from "react";
 import './Table.css';
-import Checkbox from "./Checkbox";
-import Status from './Status';
-import Text from "./Text";
+import Checkbox from "../common/Checkbox";
+import Status from '../Status';
+import Text from "../common/Text";
 
 function TableRow({order}) {
     return (

@@ -1,7 +1,7 @@
 import React from "react";
 import './Table.css';
-import Checkbox from "./Checkbox";
-import Text from "./Text";
+import Checkbox from "../common/Checkbox";
+import Text from "../common/Text";
 
 function TableHeader(props) {
     const {selectedAll} = props

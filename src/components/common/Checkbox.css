@@ -1,4 +1,4 @@
-@import "./constants.css";
+@import "constants.css";
 
 input[type=checkbox] {
     width: 16px;
