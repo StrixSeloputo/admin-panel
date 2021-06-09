@@ -10,7 +10,7 @@ function Status(props) {
             return (
                 <div className="status">
                     <StatusIcon color="ORANGE"/>
-                    <Text text="New"/>
+                    <Text text="Новый"/>
                 </div>
             )
 
@@ -18,7 +18,7 @@ function Status(props) {
             return (
                 <div className="status">
                     <StatusIcon color="BLUE"/>
-                    <Text text="Calculation"/>
+                    <Text text="Рассчет"/>
                 </div>
             )
 
@@ -26,7 +26,7 @@ function Status(props) {
             return (
                 <div className="status">
                     <StatusIcon color="BLUE"/>
-                    <Text text="Confirmed"/>
+                    <Text text="Подтвержден"/>
                 </div>
             )
 
@@ -34,7 +34,7 @@ function Status(props) {
             return (
                 <div className="status">
                     <StatusIcon color="ORANGE"/>
-                    <Text text="Deferred"/>
+                    <Text text="Отложен"/>
                 </div>
             )
 
@@ -42,7 +42,7 @@ function Status(props) {
             return (
                 <div className="status">
                     <StatusIcon color="GREEN"/>
-                    <Text text="Done"/>
+                    <Text text="Выполнен"/>
                 </div>
             )
 
@@ -50,7 +50,7 @@ function Status(props) {
             return (
                 <div className="status">
                     <StatusIcon color="GREY"/>
-                    <Text text="Cancelled"/>
+                    <Text text="Отменен"/>
                 </div>
             )
 
