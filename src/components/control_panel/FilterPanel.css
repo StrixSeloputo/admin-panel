@@ -1,0 +1,10 @@
+.filter-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px 16px;
+    height: 88px;
+    background: var(--day-white-blue);
+    border-radius: 8px;
+    margin-top: 16px;
+}

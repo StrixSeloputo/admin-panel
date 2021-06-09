@@ -1,0 +1,12 @@
+.clear-filter-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 148px;
+    height: 32px;
+
+    border-radius: 4px;
+    margin-right:16px;
+}

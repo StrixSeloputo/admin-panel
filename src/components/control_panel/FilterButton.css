@@ -1,0 +1,14 @@
+.filter-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 113px;
+    height: 32px;
+
+    background: var(--status-blue);
+    border-radius: 4px;
+
+    margin-right: 16px;
+}

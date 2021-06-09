@@ -5,12 +5,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding: var(--padding-small);
 
-    border: var(--border-width) solid var(--light-purple-color);
-    box-sizing: border-box;
-
-    margin-bottom: var(--margin-vertical);
+    /*margin-bottom: 16px;*/
 }
 
 .control-panel__item-group {

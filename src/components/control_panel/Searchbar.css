@@ -1,0 +1,16 @@
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 4px 4px 8px;
+
+    width: 320px;
+    height: 32px;
+
+    background: var(--day-white);
+    border: 1px solid var(--status-blue);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    margin-right: 16px;
+}
