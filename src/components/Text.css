@@ -1,11 +1,9 @@
 @import "constants.css";
 
 .text {
-    /* bodytext */
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 16px;
-    flex-basis: 256px;
 }
