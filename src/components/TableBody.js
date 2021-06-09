@@ -1,12 +1,13 @@
 import React from "react";
 import './Table.css';
 import TableRow from "./TableRow";
-import orders from "../fixtures";
 
-function TableBody() {
+function TableBody(props) {
+    const {orders, selectedAll} = props;
+    const rows = orders.map(order => <TableRow key={order.id} order={order}/>);
     return (
         <div className="table__body">
-            <TableRow order={orders[0]} />
+            {rows}
         </div>
     )
 }

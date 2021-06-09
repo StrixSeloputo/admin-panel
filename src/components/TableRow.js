@@ -4,8 +4,7 @@ import Checkbox from "./Checkbox";
 import Status from './Status';
 import Text from "./Text";
 
-function TableRow(props) {
-    const {order} = props;
+function TableRow({order}) {
     return (
         <div className="table__row">
             <div className="table__cell">

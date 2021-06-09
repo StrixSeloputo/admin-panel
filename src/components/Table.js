@@ -4,11 +4,12 @@ import TableHeader from "./TableHeader";
 import TableBody from "./TableBody";
 import TableFooter from "./TableFooter";
 
-function Table() {
+function Table(props) {
+    const {orders, selectedAll} = props;
     return (
         <div className="table__wrapper">
-            <TableHeader table={{selected: false}}/>
-            <TableBody/>
+            <TableHeader selectedAll={selectedAll}/>
+            <TableBody orders={orders} selectedAll={selectedAll}/>
             <TableFooter/>
         </div>
     )
