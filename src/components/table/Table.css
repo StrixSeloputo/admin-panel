@@ -3,10 +3,7 @@
 .table__wrapper {
     display: flex;
     flex-direction: column;
-
-    border: var(--border-width) solid var(--middle-purple-color);
     box-sizing: border-box;
-
     flex-grow: 1;
 }
 
@@ -37,14 +34,7 @@
     align-items: flex-start;
     align-content: center;
     padding: 0 8px;
-
     border-bottom: 1px solid var(--day-white-blue);
-}
-
-.table__footer {
-    height: var(--height-large);
-    background: var(--middle-purple-color);
-    align-self: stretch;
 }
 
 .table__cell {

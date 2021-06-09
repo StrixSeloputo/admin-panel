@@ -1,11 +1,17 @@
 import React from "react";
-import './Table.css';
+import './TableFooter.css';
+import RowCounter from "./RowCounter";
+import ChangeStatusButton from "./ChangeStatusButton";
+import DeleteButton from "./DeleteButton";
 
 function TableFooter() {
     return (
-        <div className="table__footer">
-            {/* todo */}
-            <div className="table__row"/>
+        <div className="table-footer">
+            <div className="action-button">
+                <RowCounter />
+                <ChangeStatusButton />
+                <DeleteButton />
+            </div>
         </div>
     )
 }

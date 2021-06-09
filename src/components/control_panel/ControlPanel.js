@@ -16,12 +16,12 @@ class ControlPanel extends Component {
         return (
             <div style={{marginBottom: "32px"}}>
                 <div className="control-panel">
-                    <div className="control-panel__item-group">
+                    <div className="action-button">
                         <Searchbar/>
                         <FilterButton openFilter={this.openFilter} />
                         <ClearFilterButton/>
                     </div>
-                    <div className="control-panel__extra-items">
+                    <div className="extra-action">
                         <ReloadButton/>
                     </div>
                 </div>

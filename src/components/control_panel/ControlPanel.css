@@ -9,13 +9,13 @@
     /*margin-bottom: 16px;*/
 }
 
-.control-panel__item-group {
+.action-button {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 }
 
-.control-panel__extra-items {
+.extra-action {
 
 }
 

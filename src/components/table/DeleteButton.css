@@ -1,0 +1,12 @@
+button.delete-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 24px;
+    color: var(--day-white);
+    background: var(--status-red);
+    border-color: var(--status-red);
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-right: 16px;
+}
