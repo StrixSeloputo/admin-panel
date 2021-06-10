@@ -10,7 +10,7 @@ class ThemeSwitcher extends Component {
         return (
 
             <Button onClick={this.switchTheme}
-                    className="link"
+                    className="link-padding-0"
                     text={this.state.isDay ? "Светлая тема" : "Темная тема"} />
         )
     }

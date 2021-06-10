@@ -8,14 +8,6 @@ button {
     margin-right: 16px;
 }
 
-.padding-small {
-    padding: 4px 8px;
-}
-
-.padding-medium {
-    padding: 8px 16px;
-}
-
 button.red-small {
     color: var(--day-white);
     background: var(--status-red);
@@ -36,7 +28,7 @@ button.blue-medium {
     border-color: var(--status-blue);
 }
 
-button.link {
+button.link-padding-0 {
     color: var(--status-blue);
     background: none;
     border: none;
