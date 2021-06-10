@@ -5,4 +5,5 @@ h1 {
     font-size: var(--header-font-size);
     line-height: var(--height-medium);
     color: var(--day-black);
+    margin: 0;
 }

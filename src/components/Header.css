@@ -1,7 +1,6 @@
 @import "common/constants.css";
 
 .header {
-    height: var(--height-medium);
     margin-bottom: var(--margin-vertical);
     display: flex;
     flex-direction: row;

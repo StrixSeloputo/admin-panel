@@ -1,21 +1,10 @@
 :root {
-    --light-purple-color: #A8A8FF;
-    --middle-purple-color: #8055FF;
-
     --header-font-size: 26px;
 
-    --height-small: 24px;
     --height-medium: 32px;
-    --height-large: 48px;
 
     --margin-vertical: 32px;
     --margin-horizonal: 48px;
-
-    --padding-small: 8px;
-
-    --border-width: 2px;
-
-    --text-input-width: 256px;
 
     --status-red: #F53152;
     --status-orange: #FF8C56;
@@ -37,17 +26,17 @@
 
 .dropdown-shade--day {
     background: #C4C4C4;
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-shade--night {
     background: #C4C4C4;
-    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2), 0px 6px 12px rgba(0, 0, 0, 0.3), 0px 4px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.3), 0 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 .form-shade {
     background: #C4C4C4;
-    box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.2), 0px 0px 16px rgba(0, 0, 0, 0.15), 0px 0px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 64px rgba(0, 0, 0, 0.2), 0 0 16px rgba(0, 0, 0, 0.15), 0 0 4px rgba(0, 0, 0, 0.1);
 }
 
 .margin-bottom-8 {
