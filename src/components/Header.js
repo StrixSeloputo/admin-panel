@@ -1,6 +1,6 @@
 import React from "react";
 import './Header.css';
-import HeaderText from './HeaderText';
+import HeaderText from './common/HeaderText';
 import ThemeSwitcher from "./ThemeSwitcher";
 
 function Header(props) {

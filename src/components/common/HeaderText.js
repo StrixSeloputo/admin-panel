@@ -1,10 +1,10 @@
 import React from "react";
-import './Header.css';
+import './HeaderText.css';
 
 function HeaderText(props) {
     const {text} = props;
     return (
-        <div className="header__text">{text}</div>
+        <h1>{text}</h1>
     )
 }
 
