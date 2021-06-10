@@ -2,10 +2,11 @@ import React from "react";
 import './Checkbox.css';
 
 function Checkbox(props) {
-    const {selected} = props
+    const {onChange, selected} = props
     return (
-        // <input type="checkbox" className="checkbox" checked={selected}/>
-    <input type="checkbox"/>
+        <input type="checkbox"
+               checked={selected}
+               onChange={onChange} />
     )
 }
 

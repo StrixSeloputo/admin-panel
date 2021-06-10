@@ -4,11 +4,11 @@ import RowCounter from "./RowCounter";
 import ChangeStatusButton from "./ChangeStatusButton";
 import DeleteButton from "./DeleteButton";
 
-function TableFooter() {
+function TableFooter({selectedCount}) {
     return (
         <div className="table-footer">
             <div className="action-button">
-                <RowCounter />
+                <RowCounter count={selectedCount}/>
                 <ChangeStatusButton />
                 <DeleteButton />
             </div>

@@ -4,12 +4,12 @@ import Checkbox from "../common/Checkbox";
 import Text from "../common/Text";
 
 function TableHeader(props) {
-    const {selectedAll} = props
+    const {onSelect, selectedAll} = props;
     return (
         <div className="table__header">
             <div className="table__row">
                 <div className="table__cell">
-                    <Checkbox selected={false} />
+                    <Checkbox selected={selectedAll} onChange={onSelect} />
                 </div>
                 <div className="table__cell">
                     <Text text={'#'} />
@@ -30,8 +30,8 @@ function TableHeader(props) {
                     <Text text={'ФИО'} />
                 </div>
             </div>
-            {/* todo */}
-            </div>
+            {/* todo sorting */}
+        </div>
     )
 }
 
