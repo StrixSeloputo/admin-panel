@@ -9,7 +9,7 @@ function Status(props) {
         case 'NEW':
             return (
                 <div className="status">
-                    <StatusIcon color="ORANGE"/>
+                    <StatusIcon className="orange"/>
                     <Text text="Новый"/>
                 </div>
             )
@@ -17,7 +17,7 @@ function Status(props) {
         case 'CALCULATION':
             return (
                 <div className="status">
-                    <StatusIcon color="BLUE"/>
+                    <StatusIcon className="blue"/>
                     <Text text="Рассчет"/>
                 </div>
             )
@@ -25,7 +25,7 @@ function Status(props) {
         case 'CONFIRMED':
             return (
                 <div className="status">
-                    <StatusIcon color="BLUE"/>
+                    <StatusIcon className="blue"/>
                     <Text text="Подтвержден"/>
                 </div>
             )
@@ -33,7 +33,7 @@ function Status(props) {
         case 'DEFERRED':
             return (
                 <div className="status">
-                    <StatusIcon color="ORANGE"/>
+                    <StatusIcon className="orange"/>
                     <Text text="Отложен"/>
                 </div>
             )
@@ -41,7 +41,7 @@ function Status(props) {
         case 'DONE':
             return (
                 <div className="status">
-                    <StatusIcon color="GREEN"/>
+                    <StatusIcon className="green"/>
                     <Text text="Выполнен"/>
                 </div>
             )
@@ -49,7 +49,7 @@ function Status(props) {
         case 'CANCELLED':
             return (
                 <div className="status">
-                    <StatusIcon color="GREY"/>
+                    <StatusIcon className="black"/>
                     <Text text="Отменен"/>
                 </div>
             )
@@ -57,7 +57,7 @@ function Status(props) {
         default:
             return (
                 <div className="status">
-                    <StatusIcon color="RED"/>
+                    <StatusIcon className="red"/>
                     <Text text="Unknown status"/>
                 </div>
             )

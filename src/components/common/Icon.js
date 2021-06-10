@@ -2,9 +2,12 @@ import React from "react";
 import './Icon.css';
 
 function Icon(props) {
-    const {icon} = props;
+    const {icon, className} = props;
     return (
-        <img className="icon" src={icon} alt={icon}/>
+        <img className={className} src={icon} alt={icon}/>
+        // <svg>
+        //     <use xlink:href="#bike" />
+        // </svg>
     )
 }
 

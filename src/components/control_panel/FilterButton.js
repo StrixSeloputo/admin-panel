@@ -1,12 +1,14 @@
 import React, {Component} from "react";
 import Button from "../common/Button";
+import filter from '../../resources/icons/filter.svg';
 
 export default class FilterButton extends Component {
     render() {
         return (
-            <Button onClick={this.props.switchFilter}
-                    className={this.props.isFilterOpen ? "blue-medium" : "link-padding-16"}
-                    text="Фильтры" />
+            <Button className={this.props.isFilterOpen ? "blue-medium" : "link-padding-16"}
+                    icon={filter}
+                    text="Фильтры"
+                    onClick={this.props.switchFilter} />
         )
     }
 }

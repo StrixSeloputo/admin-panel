@@ -10,12 +10,9 @@
 .table__header {
     display: flex;
     flex-direction: column;
-
     background: var(--status-blue);
     /* header font color */
     color: var(--day-white);
-    /* when selected */
-    /* color: #FFFFFF; */
 }
 
 .table__body {
@@ -58,19 +55,4 @@
 }
 .table__cell:nth-child(7) {
     flex: 20;
-}
-
-.table__arrow {
-    /* Inside Auto Layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 5px;
-
-    /* to_bot */
-    width: 6px;
-    height: 6px;
-
-    background: var(--day-white-blue);
-    /*transform: rotate(-180deg);*/
 }

@@ -3,15 +3,33 @@ import './App.css';
 import Header from "./components/Header";
 import ControlPanel from "./components/control_panel/ControlPanel";
 import Table from "./components/table/Table";
-import orders from "./fixtures";
+import orders from "./resources/fixtures";
 
 function App() {
   return (
       <div className="main__wrapper">
         <Header text="Список заказов"/>
         <ControlPanel/>
-        <Table orders={orders} selectedAll={false}/>
+        <Table orders={orders}/>
       </div>
+      /*
+      <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+       */
   );
 }
 
