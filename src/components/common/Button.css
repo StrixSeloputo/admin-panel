@@ -1,8 +1,11 @@
 @import "constants.css";
 
 button {
-    height: var(--height-medium);
     vertical-align: middle;
+    height: var(--height-medium);
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin-right: 16px;
 }
 
 .padding-small {
@@ -10,4 +13,31 @@ button {
 }
 .padding-medium {
     padding: 8px 16px;
+}
+
+button.red-small {
+    color: var(--day-white);
+    background: var(--status-red);
+    border-color: var(--status-red);
+    padding: 4px 8px;
+}
+
+button.blue-small {
+    color: var(--day-white);
+    background: var(--status-blue);
+    border-color: var(--status-blue);
+    padding: 4px 8px;
+}
+
+button.blue-medium {
+    color: var(--day-white);
+    background: var(--status-blue);
+    border-color: var(--status-blue);
+}
+
+button.link {
+    color: var(--status-blue);
+    background: none;
+    border: none;
+    padding: 8px 0;
 }

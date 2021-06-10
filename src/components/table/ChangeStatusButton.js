@@ -1,10 +1,9 @@
 import React from "react";
 import Button from "../common/Button";
-import './ChangeStatusButton.css'
 
 export default function ChangeStatusButton() {
     return (
-        <Button className="change-status-button"
+        <Button className="blue-small"
                 text="Изменить статус"/>
     )
 }

@@ -8,7 +8,9 @@ class ThemeSwitcher extends Component {
 
     render() {
         return (
+
             <Button onClick={this.switchTheme}
+                    className="link"
                     text={this.state.isDay ? "Светлая тема" : "Темная тема"} />
         )
     }
