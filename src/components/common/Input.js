@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Input.css'
 
 function Input(props) {
     const {hint, className} = props

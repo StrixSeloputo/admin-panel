@@ -1,6 +1,7 @@
 @import "constants.css";
 
-.text {
+p {
+    margin: 0;
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     font-weight: normal;

@@ -5,7 +5,7 @@ export default class ClearFilterButton extends Component {
     render() {
         return (
         <Button //onClick={this.props.clearFilter}
-                className="link-padding-0"
+                className="link padding-8-0"
                 text="Сбросить фильтры" />
         )
     }

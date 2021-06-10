@@ -1,4 +1,12 @@
+@import "constants.css";
+
 input[type="text"] {
+    background: var(--day-white);
+    border: 1px solid var(--status-blue);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 8px 8px 8px 32px;
+
     font-family: Ubuntu, serif;
     font-style: normal;
     font-weight: normal;

@@ -5,7 +5,7 @@ import filter from '../../resources/icons/filter.svg';
 export default class FilterButton extends Component {
     render() {
         return (
-            <Button className={this.props.isFilterOpen ? "blue-medium" : "link-padding-16"}
+            <Button className={this.props.isFilterOpen ? "blue-medium" : "link padding-8-16"}
                     icon={filter}
                     text="Фильтры"
                     onClick={this.props.switchFilter} />

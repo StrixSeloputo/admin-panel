@@ -3,7 +3,7 @@ import Button from "../common/Button";
 
 export default function RowCounter({count}) {
     return (
-        <Button className="link-padding-0"
+        <Button className="link padding-8-0"
                 text={"Выбрано записей: "+count} />
     )
 }
