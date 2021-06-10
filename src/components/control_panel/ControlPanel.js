@@ -13,13 +13,15 @@ class ControlPanel extends Component {
 
     render() {
         const filterPanel = this.state.isFilterOpen && <FilterPanel/>;
+        const clearFilterButton = this.state.isFilterOpen && <ClearFilterButton clearFilter={this.clearFilter.bind(this)} />;
         return (
             <div style={{marginBottom: "32px"}}>
                 <div className="control-panel">
                     <div className="action-button">
                         <Searchbar/>
-                        <FilterButton openFilter={this.openFilter} />
-                        <ClearFilterButton/>
+                        <FilterButton isFilterOpen={this.state.isFilterOpen}
+                                      switchFilter={this.switchFilter.bind(this)} />
+                        {clearFilterButton}
                     </div>
                     <div className="extra-action">
                         <ReloadButton/>
@@ -30,10 +32,14 @@ class ControlPanel extends Component {
         )
     }
 
-    openFilter = () => {
+    switchFilter = () => {
+        console.log("switch filter");
+        this.clearFilter();
         this.setState({
             isFilterOpen: !this.state.isFilterOpen
         });
     }
+
+    clearFilter = () => {/*todo*/}
 }
 export default ControlPanel;

@@ -1,9 +1,9 @@
 import React from 'react';
 
 function Input(props) {
-    const {hint} = props
+    const {hint, className} = props
     return (
-        <input type="text" placeholder={hint} />
+        <input type="text" placeholder={hint} className={className}/>
     );
 }
 

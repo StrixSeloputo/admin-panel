@@ -5,7 +5,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-
     /*margin-bottom: 16px;*/
 }
 
@@ -17,19 +16,4 @@
 
 .extra-action {
 
-}
-
-.control-panel__text-input {
-    display: block;
-    width: var(--text-input-width);
-    height: var(--height-medium);
-    background: var(--middle-purple-color);
-    margin-right: var(--padding-small);
-}
-
-.control-panel__item {
-    display: block;
-    width: var(--height-medium);
-    height: var(--height-medium);
-    background: var(--middle-purple-color);
 }

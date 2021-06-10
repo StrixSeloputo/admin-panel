@@ -1,16 +1,12 @@
 import React, {Component} from "react";
 import Button from "../common/Button";
 
-class FilterButton extends Component {
-
+export default class FilterButton extends Component {
     render() {
-        const {openFilter} = this.props;
         return (
-            <Button onClick={openFilter}
-                    className="blue-medium"
+            <Button onClick={this.props.switchFilter}
+                    className={this.props.isFilterOpen ? "blue-medium" : "link-padding-16"}
                     text="Фильтры" />
         )
     }
 }
-
-export default FilterButton;
