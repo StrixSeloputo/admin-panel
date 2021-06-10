@@ -6,16 +6,5 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-}
-
-.header__text {
-    height: var(--height-medium);
-    /* headline */
-    font-family: Ubuntu, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: var(--header-font-size);
-    line-height: var(--height-medium);
-    color: var(--day-black);
+    align-items: center;
 }

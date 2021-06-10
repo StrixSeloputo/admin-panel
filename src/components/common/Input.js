@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function Input(props) {
     const {hint, className} = props
     return (
