@@ -1,11 +1,19 @@
 import React from 'react';
-import './Input.css'
+import Text from "./Text";
+import Icon from "./Icon";
+import './Input.css';
 
-function Input(props) {
-    const {hint, className} = props
+export default function Input(props) {
+    const {hint, className, label, icon} = props
+    const labelTag = label && <Text className="input" text={label}/>
+    const iconTag = icon && <Icon className="input" icon={icon}/>
     return (
-        <input type="text" placeholder={hint} className={className}/>
+        <div className="inline margin-right-4">
+            {iconTag}
+            {labelTag}
+            <input type="text"
+                   placeholder={hint}
+                   className={className}/>
+        </div>
     );
 }
-
-export default Input;

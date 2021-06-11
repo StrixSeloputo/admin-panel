@@ -8,3 +8,11 @@ p {
     font-size: 13px;
     line-height: 16px;
 }
+
+p.input {
+    margin-right: -24px;
+    width: 16px;
+    z-index: 1;
+    padding-right: 4px;
+    color: rgba(0, 0, 0, 1);
+}

@@ -1,21 +1,14 @@
 import React, {Component} from 'react';
 import Input from "../common/Input";
-import Icon from "../common/Icon";
-import './Searchbar.css'
 import search from '../../resources/icons/search.svg';
 
-class Searchbar extends Component{
+export default class Searchbar extends Component{
 
     render () {
         return (
-            <div className="inline">
-                <Icon className="input"
-                      icon={search} />
-                <Input className="searchbar"
-                       hint={"Номер заказа или ФИО"} />
-            </div>
+            <Input className="width-320" //todo margin-right-8
+                   icon={search}
+                   hint={"Номер заказа или ФИО"} />
         );
     }
 }
-
-export default Searchbar;

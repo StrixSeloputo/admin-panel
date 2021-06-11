@@ -1,8 +1,6 @@
 :root {
     --header-font-size: 26px;
-
     --height-medium: 32px;
-
     --margin-vertical: 32px;
     --margin-horizonal: 48px;
 
@@ -39,18 +37,35 @@
     box-shadow: 0 0 64px rgba(0, 0, 0, 0.2), 0 0 16px rgba(0, 0, 0, 0.15), 0 0 4px rgba(0, 0, 0, 0.1);
 }
 
+/* ======== MARGIN ======== */
 .margin-bottom-8 {
     margin-bottom: 8px;
 }
-
 .margin-right-4 {
     margin-right: 4px;
 }
+.margin-right-8 {
+    margin-right: 8px;
+}
+.margin-left-8 {
+    margin-left: 8px;
+}
 
+/* ======== WIDTH ======== */
 .width-142 {
     width: 142px;
 }
+.width-192 {
+    width: 192px;
+}
+.width-126 {
+    width: 126px;
+}
+.width-320 {
+    width: 320px;
+}
 
+/* ======== PADDING ======== */
 .padding-left-8 {
     color: var(--status-blue);
     background: none;
@@ -58,15 +73,18 @@
     align-self: flex-end;
     padding-left: 8px;
 }
-
 .padding-8-16 {
     padding: 8px 16px;
 }
-
 .padding-8-0 {
     padding: 8px 0;
 }
-
 .padding-left-8 {
     padding-left: 8px;
+}
+
+
+.inline {
+    display: flex;
+    align-items: center;
 }

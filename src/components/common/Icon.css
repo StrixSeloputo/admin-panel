@@ -29,3 +29,9 @@ img.red {
     fill: var(--status-red);
     /*background: var(--day-white);*/
 }
+
+img.input {
+    margin-right: -24px;
+    z-index: 1;
+    margin-left: 8px;
+}

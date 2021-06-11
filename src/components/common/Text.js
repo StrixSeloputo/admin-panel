@@ -1,11 +1,9 @@
 import React from "react";
 import './Text.css';
 
-function Text(props) {
+export default function Text(props) {
     const {text, className} = props;
     return (
-        <p className={className}>{text}</p>
+        <p className={className} align={className==="input" ? "right" : "left"}>{text}</p>
     )
 }
-
-export default Text;
