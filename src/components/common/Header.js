@@ -1,11 +1,9 @@
 import React from "react";
-import './HeaderText.css';
+import './Header.css';
 
-function HeaderText(props) {
+export default function Header(props) {
     const {text} = props;
     return (
         <h1>{text}</h1>
     )
 }
-
-export default HeaderText;

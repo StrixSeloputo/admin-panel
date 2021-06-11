@@ -1,35 +1,22 @@
 import React from 'react';
 import './App.css';
-import Header from "./components/Header";
+import './components/common/constants.css';
+import orders from "./resources/fixtures";
+import Header from "./components/common/Header";
 import ControlPanel from "./components/control_panel/ControlPanel";
 import Table from "./components/table/Table";
-import orders from "./resources/fixtures";
+import ThemeSwitcher from "./components/ThemeSwitcher";
 
 function App() {
   return (
       <div className="main__wrapper">
-        <Header text="Список заказов"/>
+          <div className="inline-space-between margin-bottom-32">
+              <Header text="Список заказов"/>
+              <ThemeSwitcher theme="light"/>
+          </div>
         <ControlPanel/>
         <Table orders={orders}/>
       </div>
-      /*
-      <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-       */
   );
 }
 

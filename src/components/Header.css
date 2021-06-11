@@ -1,9 +1,0 @@
-@import "common/constants.css";
-
-.header {
-    margin-bottom: var(--margin-vertical);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
