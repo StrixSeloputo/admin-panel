@@ -1,4 +1,4 @@
-export default [
+const orders = [
     {
         "id": 1,
         "selected": false,
@@ -69,4 +69,6 @@ export default [
         "sumCurrency": "RUR",
         "customerFullName": "Thomas J. Peterson"
     }
-]
+];
+
+export default orders;
