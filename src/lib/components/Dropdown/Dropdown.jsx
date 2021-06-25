@@ -10,25 +10,24 @@ export class Dropdown extends Component {
     }
 
     render() {
+        const {icon, className = "dropdown", text, multiselect} = this.props
+
         const list = <>{
-            !this.props.multiselect ?
-                this.state.source.map(elem => <Button key={elem.id}
-                                                      text={elem.label}
-                                                      onClick={this.setModal.bind(this, false)}/>) :
-                this.state.source.map(elem => <Checkbox id={elem.id} key={elem.id}
-                                                        label={elem.label}
-                                                        selected={elem.selected}
-                                                        onClick={this.selectElem.bind(this, elem.id)}/>)
+            this.state.source.map(elem => <Checkbox id={elem.id} key={elem.id}
+                                                    label={elem.label}
+                                                    selected={elem.selected}
+                                                    className={!multiselect && "hidden"}
+                                                    onClick={this.selectElem.bind(this, elem.id)}/>)
         }</>
 
         return (
             <>
                 <div className="dropdown"
                      onClick={this.setModal.bind(this, true)}>
-                    <Button className="dropdown"
-                            text={this.getSelectedLabels()}/>
-                    <Icon className="input-right"
-                          icon={v_arrow}/>
+                    <Button className={className}
+                            icon={icon}
+                            text={!!text ? text : this.getSelectedLabels()}/>
+                    {className === "dropdown" && <Icon className="input-right" icon={v_arrow}/>}
                 </div>
                 <Modal
                     visible={this.state.isModal}
@@ -43,9 +42,16 @@ export class Dropdown extends Component {
         this.setState({isModal});
     }
     selectElem = (id) => {
-        this.setState({
-            source: this.state.source.map(elem => elem['id'] === id ? {...elem, selected: !elem.selected} : elem)
-        });
+        if (this.props.multiselect) {
+            this.setState({
+                source: this.state.source.map(elem => elem['id'] === id ? {...elem, selected: !elem.selected} : elem)
+            });
+        } else {
+            this.setState({
+                source: this.state.source.map(elem => elem['id'] === id ? {...elem, selected: true} : {...elem, selected: false}),
+                isModal: false
+            });
+        }
     }
     getSelectedLabels = () => {
         const selectedLabels = this.state.source.filter(elem => elem.selected).map(elem => elem.label).join(', ');

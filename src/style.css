@@ -83,6 +83,9 @@
 .opacity-50 {
     opacity: 50%;
 }
+.hidden {
+    display: none;
+}
 /* ======== ALIGN ======== */
 .text-center {
     text-align: center;

@@ -6,7 +6,7 @@ button {
     padding: 8px 16px;
 }
 
-div.inline>button {
+div.inline button {
     margin-right: 16px;
 }
 /* ======== COLOR ======== */
