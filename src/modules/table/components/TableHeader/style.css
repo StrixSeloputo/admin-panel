@@ -1,0 +1,7 @@
+.table__header {
+    display: flex;
+    flex-direction: column;
+    background: var(--status-blue);
+    /* header font color */
+    color: var(--day-white);
+}

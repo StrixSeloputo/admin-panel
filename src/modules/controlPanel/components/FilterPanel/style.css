@@ -1,0 +1,19 @@
+.filter-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+    background: var(--day-white-blue);
+    border-radius: 8px;
+    margin-top: 16px;
+
+    /* todo: Animation */
+    /*animation-name: appear;*/
+    /*animation-duration: .5s;*/
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8px;
+}

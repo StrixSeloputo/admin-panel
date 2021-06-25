@@ -1,0 +1,9 @@
+.table__body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    background: var(--day-white);
+    /* row font color */
+    color: var(--day-black);
+}

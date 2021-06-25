@@ -1,0 +1,13 @@
+.table-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+
+    background: var(--day-white-blue);
+}
+
+.extra-action {
+
+}

@@ -1,0 +1,16 @@
+.status {
+    /*color: var(--status-blue);*/
+    background: none;
+    border: none;
+    padding: 0;
+}
+.status-final {
+    opacity: 50%;
+}
+
+div.modal .status {
+    width: 126px;
+    justify-content: flex-start;
+    padding: 8px 0;
+    opacity: 100%;
+}

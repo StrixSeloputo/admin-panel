@@ -1,0 +1,72 @@
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation-name: appear;
+    animation-duration: 300ms;
+}
+
+.modal-dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 16px;
+    margin: 8px 0;
+
+    overflow: hidden;
+
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slide-in;
+    animation-duration: 0.5s;
+
+    background: var(--day-white);
+    background: var(--day-white);
+    box-shadow: var(--day-dropdown-shadow);
+    border-radius: 8px;
+}
+
+.modal-header,
+.modal-footer {
+    display: flex;
+    align-items: center;
+}
+.modal-header {
+    margin: 8px 0;
+}
+
+.modal-footer {
+    /* todo */
+}
+
+.modal-body {
+    overflow: auto;
+}
+.modal-content {
+    /* todo */
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slide-in {
+    from {
+        transform: translateY(-150px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

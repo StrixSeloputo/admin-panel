@@ -1,0 +1,20 @@
+@import "../../../style.css";
+
+input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+    /*background: var(--day-white);*/
+    /*border: 1px solid var(--day-light-blue);*/
+    /*box-sizing: border-box;*/
+    /*border-radius: 2px;*/
+    margin: 0;
+    /*color:  -internal-light-dark(var(--day-light-blue), var(--day-white));*/
+}
+
+div.modal .checkbox {
+    padding: 8px 0;
+}
+
+input[type=checkbox]+p {
+    margin-left: 8px;
+}

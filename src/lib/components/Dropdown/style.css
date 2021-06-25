@@ -1,0 +1,28 @@
+@import "../../../style.css";
+
+button.dropdown {
+    width: 190px;
+    background: var(--day-white);
+    border: 1px solid var(--status-blue);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 8px 32px 8px 8px;
+
+    font-family: Ubuntu, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+div.dropdown {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+button.dropdown>p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
