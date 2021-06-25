@@ -5,7 +5,7 @@ import search from '../../../../resources/icons/search.svg';
 
 export const Searchbar = () => {
     return (
-        <Input className="width-320" //todo margin-right-8
+        <Input className="width-320 margin-right-8"
                icon={search}
                hint={"Номер заказа или ФИО"} />
     );

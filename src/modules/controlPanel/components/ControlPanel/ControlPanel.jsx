@@ -11,7 +11,7 @@ export class ControlPanel extends Component {
         const filterPanel = this.state.isFilterOpen && <FilterPanel/>;
         const clearFilterButton = this.state.isFilterOpen && <ClearFilterButton clearFilter={this.clearFilter.bind(this)} />;
         return (
-            <div style={{marginBottom: "32px"}}>
+            <div className="margin-bottom-32">
                 <div className="control-panel">
                     <div className="inline">
                         <Searchbar/>

@@ -13,17 +13,17 @@ div.inline>button {
 button.red {
     color: var(--day-white);
     background: var(--status-red);
-    border-color: var(--status-red);
+    border: 1px solid var(--status-red);
 }
 button.blue {
     color: var(--day-white);
     background: var(--status-blue);
-    border-color: var(--status-blue);
+    border: 1px solid var(--status-blue);
 }
 button.link {
     color: var(--status-blue);
     background: none;
-    border: none;
+    border: 1px solid transparent;
 }
 
 /* ======== SIZE ======== */
