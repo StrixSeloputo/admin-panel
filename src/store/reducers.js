@@ -1,6 +1,6 @@
 import {combineReducers} from "redux";
-import {profileReducer as profile} from "./profile";
+import {themeReducer as theme} from "./theme";
 
 export const reducers = combineReducers({
-    profile
+    theme
 })

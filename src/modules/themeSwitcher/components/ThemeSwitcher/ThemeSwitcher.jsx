@@ -1,63 +1,42 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Button, Modal, Text} from "../../../../lib";
-import {getDefaultTheme, themes} from "../../../../store/theme";
+import {themeActions, themes} from "../../../../store/theme";
+import {useDispatch, useSelector} from "react-redux";
 
-// import { useDispatch } from "react-redux";
-
-export class ThemeSwitcher extends Component {
-    /*
+export const ThemeSwitcher = () => {
     const dispatch = useDispatch();
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        const btn = event.currentTarget;
+    const switchTheme = (theme) => () => dispatch(themeActions.setTheme(theme));
+    const openThemeModal = () => dispatch(themeActions.openThemeModal());
+    const closeThemeModal = () => dispatch(themeActions.closeThemeModal());
 
-        const theme = {
-            btn = bt
-        }
-    }
-    */
+    const {theme, isThemeModal} = useSelector((state) => state.theme);
+    const {icon, label} = theme;
+    const text = label+' тема';
+    return (
+        <>
+            <Button className="link medium-0"
+                    icon={icon}
+                    text={text}
+                    onClick={openThemeModal}/>
+            <Modal
+                visible={isThemeModal}
+                header={<Text text="Выберите тему"/>}
+                content={
+                    <>
+                        {
+                            themes.map(theme => <Button className="link"
+                                                        icon={theme.icon}
+                                                        text={theme.label}
+                                                        key={theme.id}
+                                                        onClick={switchTheme(theme)}/>)
+                        }
+                    </>
+                }
+                positionAround={this}
+                onClose={closeThemeModal}
+            />
+        </>
+    )
 
-    state = {
-        theme: getDefaultTheme(),
-        isModal: false
-    }
-
-    render() {
-        const {icon, label} = this.state.theme;
-        const text = label+' тема';
-        return (
-            <>
-                <Button className="link medium-0"
-                        icon={icon}
-                        text={text}
-                        onClick={this.setModal.bind(this, true)}/>
-                <Modal
-                    visible={this.state.isModal}
-                    header={<Text text="Выберите тему"/>}
-                    content={
-                        <>
-                            {
-                                themes.map(theme => <Button className="link"
-                                                            icon={theme.icon}
-                                                            text={theme.label}
-                                                            key={theme.id}
-                                                            onClick={this.switchTheme.bind(this, theme)} />)
-                            }
-                        </>
-                    }
-                    positionAround={this}
-                    onClose={this.setModal.bind(this, false)}
-                />
-            </>
-        )
-    }
-
-    switchTheme = (theme) => {
-        this.setState({theme, isModal: false});
-    }
-
-    setModal = (isModal) => {
-        this.setState({isModal})
-    }
 }
